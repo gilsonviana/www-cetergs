@@ -1,6 +1,6 @@
-.header__mast {
-  -webkit-backdrop-filter: saturate(180%) blur(40px);
-  backdrop-filter: saturate(180%) blur(40px);
+.header {
+  top: 0;
+  z-index: 1000;
 }
 
 .header__navbar__logo {

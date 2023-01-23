@@ -1,5 +1,4 @@
 @import url('./navbar.css');
-@import url('./cards.css');
 
 .page__main__section {
   position: relative;
@@ -7,7 +6,7 @@
   margin-bottom: var(--section-gap);
 }
 
-.page__main__section__bg, 
+.page__main__section__bg,
 .page__main__section__overlay {
   background: rgba(0, 0, 0, 0.35);
   position: absolute;
@@ -15,4 +14,66 @@
   bottom: 0;
   left: 0;
   right: 0
+}
+
+.fusion-section {
+  border-top: 10vh solid #ced4da;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  width: 0;
+  height: 0;
+  content: "";
+  display: block;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* .page-home #o-curso {
+  position: relative;
+  max-width: 350px;
+  min-height: 400px;
+}
+.page-home #o-curso-description {
+  top: 300px;
+  z-index: -1;
+} */
+
+.page-home #o-curso::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 60px 60px 0px 0px;
+  border-color: #608A32 transparent transparent transparent;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.page-home #o-curso-background::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #ddd;
+  left: 0;
+  right: 0;
+  top: 10%;
+  z-index: -1;
+  height: 80%;
+  border-radius: 4rem 2rem;
+}
+
+p .underlined {
+  border-bottom: 3px solid tomato;
+}
+
+.page-home #amenidades-img {
+  /* width: 498px; */
+  filter: drop-shadow(2px 2px 20px #555);
+}
+
+.shadow-text {
+  text-shadow: 1px 2px 1rem #ddd;
 }
