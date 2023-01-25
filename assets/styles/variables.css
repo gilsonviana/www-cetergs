@@ -1,7 +1,6 @@
 :root {
-  --color-primary: #005C40;
-  --color-primary-rgb: 0, 92, 64;
-  --color-secondary: #70B371;
+  --color-primary: #E61F12;
+  --color-primary-rgb: 230, 31, 18;
 
-  --section-gap: 10rem;
+  --section-gap: 6rem;
 }

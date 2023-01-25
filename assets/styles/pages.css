@@ -1,7 +1,11 @@
 @import url('./navbar.css');
 
 .page__main {
-  margin-top: 11rem;
+  overflow-x: hidden;
+}
+
+.page__main__padding {
+  height: 11rem;
 }
 
 .page__main__section {
@@ -34,23 +38,13 @@
   margin: auto;
 }
 
-/* .page-home #o-curso {
-  position: relative;
-  max-width: 350px;
-  min-height: 400px;
-}
-.page-home #o-curso-description {
-  top: 300px;
-  z-index: -1;
-} */
-
 .page-home #o-curso::after {
   content: '';
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 60px 60px 0px 0px;
-  border-color: #608A32 transparent transparent transparent;
+  border-color: var(--color-primary) transparent transparent transparent;
   left: 0;
   top: 0;
   position: absolute;
@@ -69,7 +63,8 @@
 }
 
 p .underlined {
-  border-bottom: 3px solid tomato;
+  border-bottom: 3px solid var(--color-primary);
+  font-weight: bold;
 }
 
 .page-home #amenidades-img {
@@ -79,4 +74,24 @@ p .underlined {
 
 .shadow-text {
   text-shadow: 1px 2px 1rem #ddd;
+}
+
+.page__main__section__lead,
+.text-align-responsive {
+  text-align: center;
+}
+
+.margin-top-responsive {
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .page__main__section__lead,
+  .text-align-responsive {
+    text-align: left;
+  }
+
+  .margin-top-responsive {
+    margin-top: 0;
+  }
 }
