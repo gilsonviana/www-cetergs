@@ -1,5 +1,9 @@
 @import url('./navbar.css');
 
+.page__main {
+  margin-top: 11rem;
+}
+
 .page__main__section {
   position: relative;
   margin-top: var(--section-gap);

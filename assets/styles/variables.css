@@ -1,5 +1,6 @@
 :root {
   --color-primary: #005C40;
+  --color-primary-rgb: 0, 92, 64;
   --color-secondary: #70B371;
 
   --section-gap: 10rem;
