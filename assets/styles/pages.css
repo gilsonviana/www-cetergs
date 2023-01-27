@@ -1,21 +1,23 @@
 @import url('./navbar.css');
-
-.page__main {
-  overflow-x: hidden;
-}
+@import url('./pages-home.css');
+@import url('./pages-quem-somos.css');
 
 .page__main__padding {
   height: 11rem;
 }
 
-.page__main__section {
+.page__section {
   position: relative;
   margin-top: var(--section-gap);
   margin-bottom: var(--section-gap);
 }
 
-.page__main__section__bg,
-.page__main__section__overlay {
+.page__section:last-of-type {
+  margin-bottom: 0px;
+}
+
+.page__section__bg,
+.page__section__overlay {
   background: rgba(0, 0, 0, 0.35);
   position: absolute;
   top: 0;
@@ -38,45 +40,18 @@
   margin: auto;
 }
 
-.page-home #o-curso::after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 60px 60px 0px 0px;
-  border-color: var(--color-primary) transparent transparent transparent;
-  left: 0;
-  top: 0;
-  position: absolute;
-}
 
-.page-home #o-curso-background::before {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 0;
-  right: 0;
-  top: 10%;
-  z-index: -1;
-  height: 80%;
-  border-radius: 4rem 2rem;
-}
 
 p .underlined {
   border-bottom: 3px solid var(--color-primary);
   font-weight: bold;
 }
 
-.page-home #amenidades-img {
-  /* width: 498px; */
-  filter: drop-shadow(2px 2px 20px #555);
-}
-
 .shadow-text {
   text-shadow: 1px 2px 1rem #ddd;
 }
 
-.page__main__section__lead,
+.page__section__lead,
 .text-align-responsive {
   text-align: center;
 }
@@ -86,7 +61,7 @@ p .underlined {
 }
 
 @media screen and (min-width: 768px) {
-  .page__main__section__lead,
+  .page__section__lead,
   .text-align-responsive {
     text-align: left;
   }
