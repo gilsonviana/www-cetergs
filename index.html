@@ -84,6 +84,20 @@
                 Venha estudar teologia reformada com professores altamente qualificados
               </p>
               <a type="button" class="btn btn-primary rounded-0 btn-lg px-4 me-sm-3 shadow-text" href="#">Saiba mais</a>
+              <a type="button" class="btn btn-primary rounded-0 btn-lg px-4 me-sm-3 shadow-text margin-top-responsive" data-bs-toggle="modal" data-bs-target="#video-aula">Assistir aula gratuíta</a>
+              <div class="modal" tabindex="-1" id="video-aula" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoAulaModal" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">CETERGS - Aula inicial gratuíta</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/iwNBDQUeQuo?autoplay=1&mute=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -386,6 +400,11 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"
     async></script>
   <script>
+    // const videoAulaModal = document.querySelector('#video-aula');
+    // videoAulaModal.addEventListener('shown.bs.modal', () => {
+    //   alert('')
+    // })
+
     if (window.hasOwnProperty('Splide')) {
 
       const splide = new Splide( '.splide', {
