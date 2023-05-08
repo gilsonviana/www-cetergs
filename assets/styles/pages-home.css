@@ -1,3 +1,7 @@
+.curso-card {
+  min-height: 460px;
+}
+
 .page-home #o-curso::after {
   content: '';
   width: 0;
