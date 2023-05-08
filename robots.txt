@@ -1,0 +1,10 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+User-agent: *
+Allow: /quem-somos
+
+Sitemap: https://cetergs.com.br/sitemap.xml
